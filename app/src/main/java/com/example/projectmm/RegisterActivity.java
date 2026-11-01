@@ -27,15 +27,15 @@ public class RegisterActivity extends AppCompatActivity {
             String confirm = etConfirmPass.getText().toString().trim();
 
             if (name.isEmpty()) {
-                etName.setError("Заполните имя");
+                etName.setError("Please enter a username");
                 return;
             }
             if (pass.length() < 6) {
-                etPass.setError("Пароль должен быть от 6 символов");
+                etPass.setError("Password must be at least 6 characters");
                 return;
             }
             if (!pass.equals(confirm)) {
-                etConfirmPass.setError("Пароли не совпадают");
+                etConfirmPass.setError("Passwords do not match");
                 return;
             }
 

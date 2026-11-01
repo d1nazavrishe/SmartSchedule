@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             registeredUser = getIntent().getStringExtra("user_name");
             registeredPass = getIntent().getStringExtra("user_pass");
             etName.setText(registeredUser);
-            Toast.makeText(this, "Регистрация успешна!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
         }
 
         btnLogin.setOnClickListener(v -> {
@@ -35,14 +35,14 @@ public class LoginActivity extends AppCompatActivity {
             String pass = etPass.getText().toString().trim();
 
             if (name.isEmpty() || pass.isEmpty()) {
-                Toast.makeText(this, "Заполните все поля!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please fill in all fields!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
             if (name.equals(registeredUser) && pass.equals(registeredPass) && !registeredUser.isEmpty()) {
-                Toast.makeText(this, "Успешный вход!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Неверные данные или пользователь не создан", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Invalid credentials or user does not exist", Toast.LENGTH_SHORT).show();
             }
         });
 

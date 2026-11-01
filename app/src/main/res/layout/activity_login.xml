@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Вход"
+        android:text="Login"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
@@ -18,14 +18,14 @@
         android:id="@+id/etLoginName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Имя пользователя"
+        android:hint="Username"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/etLoginPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Пароль"
+        android:hint="Password"
         android:inputType="textPassword"
         android:layout_marginTop="12dp" />
 
@@ -33,14 +33,14 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Войти"
+        android:text="Log In"
         android:layout_marginTop="24dp" />
 
     <TextView
         android:id="@+id/tvGoToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Нет аккаунта? Зарегистрироваться"
+        android:text="Don't have an account? Register"
         android:textColor="#0000EE"
         android:layout_marginTop="16dp" />
 

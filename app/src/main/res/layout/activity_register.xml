@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
+        android:text="Register"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
@@ -18,14 +18,14 @@
         android:id="@+id/etRegName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Имя пользователя"
+        android:hint="Username"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/etRegPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Пароль (мин. 6 символов)"
+        android:hint="Password (min. 6 characters)"
         android:inputType="textPassword"
         android:layout_marginTop="12dp" />
 
@@ -33,7 +33,7 @@
         android:id="@+id/etRegConfirmPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Повторите пароль"
+        android:hint="Confirm password"
         android:inputType="textPassword"
         android:layout_marginTop="12dp" />
 
@@ -41,7 +41,7 @@
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Зарегистрироваться"
+        android:text="Register"
         android:layout_marginTop="24dp" />
 
 </LinearLayout>
