@@ -9,16 +9,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
+    ImageView logo;
+    Animation anim;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        ImageView logo = findViewById(R.id.imgLogo);
-        Animation anim = AnimationUtils.loadAnimation(this, R.anim.splash_anim);
+        logo = (ImageView) findViewById(R.id.imgLogo);
+        anim = AnimationUtils.loadAnimation(this, R.anim.splash_anim);
         logo.startAnimation(anim);
 
-        // Ожидание 3 секунды в отдельном потоке (Thread)
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -28,10 +30,9 @@ public class SplashActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                // Переход на главный экран
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
-                finish(); // Закрываем заставку из стека
+                finish();
             }
         }).start();
     }

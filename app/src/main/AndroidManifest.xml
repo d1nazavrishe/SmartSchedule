@@ -12,22 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PROJECTMM"
         tools:targetApi="31">
-
-        <!-- 1. Заставка (стартовый экран при запуске) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- 2. Главный экран -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
