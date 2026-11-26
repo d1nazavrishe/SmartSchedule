@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".SplashActivity">
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true">
 
-    <ImageView
-        android:id="@+id/imgLogo"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLogo"
+        style="@style/Widget.App.LogoCard"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:contentDescription="@null"
-        android:src="@drawable/ic_app_logo" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="28dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/app_name" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/App.Text.SplashTitle"
+        android:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/cardLogo"
+        app:layout_constraintBottom_toTopOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        style="@style/App.Text.Subtitle"
+        android:text="@string/splash_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gradient xmlns:android="http://schemas.android.com/apk/res/android"
+    android:type="linear"
+    android:startX="0"
+    android:startY="0"
+    android:endX="400"
+    android:endY="220"
+    android:tileMode="clamp">
+    <item android:color="@color/yellow_neon" android:offset="0.0" />
+    <item android:color="@color/orange_neon" android:offset="0.35" />
+    <item android:color="@color/pink_neon" android:offset="0.7" />
+    <item android:color="@color/purple_neon" android:offset="1.0" />
+</gradient>

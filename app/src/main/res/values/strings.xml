@@ -1,3 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PROJECTMM</string>
+    <!-- Splash -->
+    <string name="app_name">האפליקציה שלי</string>
+    <string name="splash_subtitle">ברוכים הבאים</string>
+
+    <!-- Shared fields -->
+    <string name="email_hint">אימייל</string>
+    <string name="password_hint">סיסמה</string>
+    <string name="confirm_password_hint">אימות סיסמה</string>
+
+    <!-- Sign in -->
+    <string name="signin_title">ברוכים השבים</string>
+    <string name="btn_signin">התחברות</string>
+    <string name="no_account">אין לך חשבון?</string>
+    <string name="go_signup">הירשם</string>
+
+    <!-- Sign up -->
+    <string name="signup_title">יצירת חשבון</string>
+    <string name="btn_signup">הרשמה</string>
+    <string name="have_account">כבר יש לך חשבון?</string>
+    <string name="go_signin">התחבר</string>
+
+    <!-- Errors -->
+    <string name="err_empty_email">יש להזין אימייל</string>
+    <string name="err_invalid_email">כתובת האימייל אינה תקינה</string>
+    <string name="err_empty_password">יש להזין סיסמה</string>
+    <string name="err_short_password">הסיסמה צריכה להכיל לפחות 6 תווים</string>
+    <string name="err_password_mismatch">הסיסמאות אינן תואמות</string>
+    <string name="err_wrong_credentials">האימייל או הסיסמה שגויים</string>
+
+    <!-- Messages -->
+    <string name="msg_signin_success">התחברת בהצלחה</string>
+    <string name="msg_signup_success">נרשמת בהצלחה</string>
+    <string name="remember_me">זכור אותי</string>
 </resources>

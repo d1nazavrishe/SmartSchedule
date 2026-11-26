@@ -1,6 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.PROJECTMM" parent="Theme.Material3.DayNight.NoActionBar">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.RememberMe" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_neon</item>
+        <item name="colorOnPrimary">@color/surface</item>
+        <item name="colorSecondary">@color/pink_neon</item>
+        <item name="colorOnSecondary">@color/surface</item>
+        <item name="colorTertiary">@color/blue_neon</item>
+        <item name="android:colorBackground">@color/bg_warm</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="Theme.PROJECTMM" parent="Base.Theme.PROJECTMM" />
+    <style name="Theme.RememberMe.Splash">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
 </resources>

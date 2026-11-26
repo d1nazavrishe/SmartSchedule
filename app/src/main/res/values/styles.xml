@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text field -->
+    <style name="Widget.App.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeColor">@color/stroke_field_selector</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="hintTextColor">@color/purple_neon</item>
+        <item name="startIconTint">@color/blue_neon</item>
+        <item name="endIconTint">@color/purple</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- Gradient button -->
+    <style name="Widget.App.GradientButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/btn_gradient</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:outlineSpotShadowColor">@color/pink_neon</item>
+        <item name="android:outlineAmbientShadowColor">@color/pink_neon</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:textColor">@color/surface</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Form card -->
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">12dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="contentPadding">24dp</item>
+        <item name="android:outlineSpotShadowColor">@color/purple_neon</item>
+        <item name="android:outlineAmbientShadowColor">@color/purple_neon</item>
+    </style>
+
+    <!-- Logo circle -->
+    <style name="Widget.App.LogoCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">80dp</item>
+        <item name="cardElevation">16dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="android:outlineSpotShadowColor">@color/pink_neon</item>
+        <item name="android:outlineAmbientShadowColor">@color/pink_neon</item>
+    </style>
+
+    <!-- Texts (base style for all App.Text.* styles) -->
+    <style name="App.Text" parent="android:Widget.TextView" />
+
+    <style name="App.Text.SplashTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_neon</item>
+    </style>
+
+    <style name="App.Text.Subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="App.Text.HeaderTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/surface</item>
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">8</item>
+    </style>
+
+    <style name="App.Text.Muted">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="App.Text.Link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pink_neon</item>
+    </style>
+
+    <style name="Widget.App.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/purple_neon</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+</resources>

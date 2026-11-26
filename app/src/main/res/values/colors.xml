@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Yellow -->
+    <color name="yellow_neon">#FFE600</color>
+    <color name="yellow">#FFD000</color>
+    <color name="yellow_pastel">#FFF7B3</color>
+
+    <!-- Orange -->
+    <color name="orange_neon">#FF8A00</color>
+    <color name="orange">#F57C00</color>
+    <color name="orange_pastel">#FFE0BF</color>
+
+    <!-- Pink -->
+    <color name="pink_neon">#FF2E93</color>
+    <color name="pink">#E91E7A</color>
+    <color name="pink_pastel">#FFD1E6</color>
+
+    <!-- Purple -->
+    <color name="purple_neon">#9D4EDD</color>
+    <color name="purple">#7B2CBF</color>
+    <color name="purple_pastel">#E9D8FD</color>
+
+    <!-- Blue -->
+    <color name="blue_neon">#00B4FF</color>
+    <color name="blue">#0091EA</color>
+    <color name="blue_pastel">#CCEFFF</color>
+
+    <!-- Neutrals -->
+    <color name="bg_warm">#FFFBF7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#2B2140</color>
+    <color name="text_secondary">#7A7190</color>
+    <color name="field_stroke">#E4DDF0</color>
 </resources>
