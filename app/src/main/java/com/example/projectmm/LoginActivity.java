@@ -115,6 +115,11 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, R.string.msg_signin_success, Toast.LENGTH_SHORT).show();
+
+        // После успешного входа открываем главный экран с расписанием, To-Do и ИИ
+        Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(mainIntent);
+        finish();
     }
 
     private boolean isValid(String email, String password) {

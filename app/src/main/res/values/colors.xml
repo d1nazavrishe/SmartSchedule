@@ -25,6 +25,10 @@
     <color name="blue">#0091EA</color>
     <color name="blue_pastel">#CCEFFF</color>
 
+    <!-- Green (for light workload / success badges) -->
+    <color name="green">#00C853</color>
+    <color name="green_pastel">#DCFCE7</color>
+
     <!-- Neutrals -->
     <color name="bg_warm">#FFFBF7</color>
     <color name="surface">#FFFFFF</color>

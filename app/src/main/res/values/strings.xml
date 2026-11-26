@@ -33,4 +33,27 @@
     <string name="msg_signin_success">התחברת בהצלחה</string>
     <string name="msg_signup_success">נרשמת בהצלחה</string>
     <string name="remember_me">זכור אותי</string>
+
+    <!-- Bottom Navigation (English) -->
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_todo">To-Do List</string>
+    <string name="nav_ai">AI Assistant</string>
+
+    <!-- Schedule Screen -->
+    <string name="schedule_title">Weekly Schedule</string>
+    <string name="daily_workload">Daily Workload</string>
+    <string name="btn_add_from_todo">+ From To-Do</string>
+    <string name="btn_new_event">+ Event</string>
+    <string name="empty_day_hint">Free slot</string>
+
+    <!-- To-Do Screen -->
+    <string name="todo_title">My To-Do List</string>
+    <string name="todo_empty">Your To-Do list is empty.\nTap + to add your first task!</string>
+    <string name="add_todo_title">Add New Task</string>
+
+    <!-- AI Assistant Screen -->
+    <string name="ai_title">Smart AI Planner</string>
+    <string name="ai_input_hint">Ask AI to plan, move or add tasks...</string>
+    <string name="ai_apply">Apply Changes</string>
+    <string name="ai_dismiss">Dismiss</string>
 </resources>
