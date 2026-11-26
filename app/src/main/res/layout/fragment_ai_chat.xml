@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_warm"
+    android:orientation="vertical">
+
+    <!-- Верхняя шапка экрана ИИ с кнопкой настройки бесплатного API-ключа Gemini -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_neon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ai_title"
+                android:textColor="@color/surface"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAiStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by Gemini · Knows your Schedule &amp; To-Do"
+                android:textColor="#DDFFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Кнопка ввода/смены бесплатного Gemini API ключа -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApiKey"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="API Key"
+            android:textColor="@color/purple"
+            android:textSize="12sp"
+            app:backgroundTint="@color/surface"
+            app:icon="@drawable/ic_key"
+            app:iconSize="16dp"
+            app:iconTint="@color/purple" />
+    </LinearLayout>
+
+    <!-- Быстрые кнопки-подсказки для удобной демонстрации возможностей ИИ -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="4dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPromptPlaceTodos"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Place my To-Do tasks"
+                android:textColor="@color/purple"
+                android:textSize="12sp"
+                app:strokeColor="@color/purple_neon" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPromptOptimize"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Suggest optimal schedule"
+                android:textColor="@color/pink"
+                android:textSize="12sp"
+                app:strokeColor="@color/pink_neon" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPromptAnalyze"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Analyze workload &amp; energy"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                app:strokeColor="@color/blue_neon" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Прокручиваемая лента сообщений чата -->
+    <ScrollView
+        android:id="@+id/scrollChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/llChatMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Индикатор загрузки во время ожидания ответа от Gemini -->
+    <ProgressBar
+        android:id="@+id/pbAiLoading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!-- Нижняя панель ввода сообщения -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etChatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/ai_input_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="4"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/btnSendChat"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_gradient"
+            android:contentDescription="Send"
+            android:padding="10dp"
+            android:src="@drawable/ic_send" />
+    </LinearLayout>
+
+</LinearLayout>
