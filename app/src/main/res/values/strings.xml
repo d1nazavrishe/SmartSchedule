@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Splash -->
-    <string name="app_name">האפליקציה שלי</string>
-    <string name="splash_subtitle">ברוכים הבאים</string>
+    <string name="app_name">SmartSchedule</string>
+    <string name="splash_subtitle">Plan smarter, stress less</string>
 
     <!-- Shared fields -->
-    <string name="email_hint">אימייל</string>
-    <string name="password_hint">סיסמה</string>
-    <string name="confirm_password_hint">אימות סיסמה</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
 
     <!-- Sign in -->
-    <string name="signin_title">ברוכים השבים</string>
-    <string name="btn_signin">התחברות</string>
-    <string name="no_account">אין לך חשבון?</string>
-    <string name="go_signup">הירשם</string>
+    <string name="signin_title">Welcome Back</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="go_signup">Sign Up</string>
 
     <!-- Sign up -->
-    <string name="signup_title">יצירת חשבון</string>
-    <string name="btn_signup">הרשמה</string>
-    <string name="have_account">כבר יש לך חשבון?</string>
-    <string name="go_signin">התחבר</string>
+    <string name="signup_title">Create Account</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="go_signin">Sign In</string>
 
     <!-- Errors -->
-    <string name="err_empty_email">יש להזין אימייל</string>
-    <string name="err_invalid_email">כתובת האימייל אינה תקינה</string>
-    <string name="err_empty_password">יש להזין סיסמה</string>
-    <string name="err_short_password">הסיסמה צריכה להכיל לפחות 6 תווים</string>
-    <string name="err_password_mismatch">הסיסמאות אינן תואמות</string>
-    <string name="err_wrong_credentials">האימייל או הסיסמה שגויים</string>
+    <string name="err_empty_email">Please enter your email</string>
+    <string name="err_invalid_email">Invalid email address</string>
+    <string name="err_empty_password">Please enter your password</string>
+    <string name="err_short_password">Password must be at least 6 characters</string>
+    <string name="err_password_mismatch">Passwords do not match</string>
+    <string name="err_wrong_credentials">Incorrect email or password</string>
 
     <!-- Messages -->
-    <string name="msg_signin_success">התחברת בהצלחה</string>
-    <string name="msg_signup_success">נרשמת בהצלחה</string>
-    <string name="remember_me">זכור אותי</string>
+    <string name="msg_signin_success">Signed in successfully</string>
+    <string name="msg_signup_success">Account created successfully</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_saved_prompt">Forget saved login credentials?</string>
+    <string name="forget_saved_action">Yes, forget</string>
 
     <!-- Bottom Navigation (English) -->
     <string name="nav_schedule">Schedule</string>

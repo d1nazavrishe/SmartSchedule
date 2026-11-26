@@ -162,9 +162,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void showForgetSnackbar() {
-        Snackbar snackbar = Snackbar.make(cbRememberMe, "לשכוח את פרטי ההתחברות השמורים?", Snackbar.LENGTH_LONG);
+        Snackbar snackbar = Snackbar.make(cbRememberMe, R.string.forget_saved_prompt, Snackbar.LENGTH_LONG);
 
-        snackbar.setAction("כן, לשכוח", new View.OnClickListener() {
+        snackbar.setAction(R.string.forget_saved_action, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 clearCredentials();
